@@ -20,3 +20,27 @@ public class LetsdoDSA {
         System.out.println("The maximum value of the array is " + minmax.max);
     }
 }
+
+Explainations:-
+
+The pair class is defined with two public integer variables: min and max. This class will be used to store the minimum and maximum values.
+
+The getminmax method is defined as a static method. It takes two parameters: an integer array arr and the size of the array n. This method returns an object of the pair class.
+
+Inside the getminmax method, the pair object minmax is created.
+
+The Arrays.sort method is used to sort the array in ascending order.
+
+The minimum value is assigned to minmax.min by accessing the first element of the sorted array (arr[0]).
+
+The maximum value is assigned to minmax.max by accessing the last element of the sorted array (arr[n-1]).
+
+The minmax object is returned.
+
+In the main method, an integer array arr is initialized with some values.
+
+The size of the array is calculated using the length property of the array.
+
+The getminmax method is called with the arr and size parameters, and the returned minmax object is stored in a variable.
+
+The minimum and maximum values are printed using System.out.println.
